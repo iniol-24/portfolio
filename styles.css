@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: rgb(202, 60, 202);
+}
+
+.head {
+    background-color: #000011;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.head .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1200px ;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.head .logo {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.box {
+    list-style: none;
+    display: flex;
+}
+
+.box li {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+
+
+.box a {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.box a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: chocolate;
+    transition: width 0.4s ease;
+}
+
+
+.box a:hover::after {
+    width: 100%;
+}
+
+.box a:hover {
+    color: chocolate;
+    
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+    padding: 0 20px;
+    color: white;
+}
+
+.aside {
+    background-color: rgb(202, 60, 202);
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.aside h2{
+    margin-bottom: 20px;
+}
+
+.aside ul {
+    list-style: none;
+}
+
+.aside ul li {
+    margin-bottom: 10px;
+}
+
+.aside ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: 700;
+}
+
+.aside ul li a:hover {
+    color: chocolate;
+}
+
+.who h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+}
+
+.who p{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.project-grid {
+    display: flex;
+    gap: 20px;
+    color: white;
+
+}
+
+.project-card {
+    background-color: chocolate;
+    padding: 20px;
+    background-repeat: 8px;
+    box-shadow: 0 4px 6px chocolate ;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a{
+    background-color: chocolate;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover{
+    color: white;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
